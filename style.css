@@ -1,3 +1,110 @@
+/* Carrossel Inspirações 60+ */
+.inspirations-carousel {
+  margin: 0 auto var(--space-32) auto;
+  padding: var(--space-16) var(--space-8);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  max-width: 1100px;
+  overflow-x: auto;
+}
+
+.inspirations-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-16);
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.inspirations-cards-wrapper {
+  display: flex;
+  gap: var(--space-16);
+  overflow-x: auto;
+  padding-bottom: var(--space-8);
+  scroll-snap-type: x mandatory;
+}
+
+.inspiration-card {
+  min-width: 260px;
+  max-width: 280px;
+  background: var(--color-background);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  scroll-snap-align: start;
+  transition: box-shadow 0.2s;
+}
+.inspiration-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+.inspiration-img-wrapper {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  border-top-left-radius: var(--radius-md);
+  border-top-right-radius: var(--radius-md);
+  background: var(--color-bg-8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inspiration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.inspiration-info {
+  padding: var(--space-12) var(--space-10) var(--space-16) var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+.inspiration-nome {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--space-4) 0;
+  color: var(--color-text);
+}
+.inspiration-local {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+.inspiration-facts {
+  font-size: var(--font-size-sm);
+  color: var(--color-slate-500);
+  margin-bottom: var(--space-8);
+}
+.inspiration-link {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  text-decoration: underline;
+  font-size: var(--font-size-base);
+  margin-top: var(--space-4);
+  align-self: flex-start;
+  transition: color 0.2s;
+}
+.inspiration-link:hover {
+  color: var(--color-primary-hover);
+}
+
+@media (max-width: 768px) {
+  .inspirations-cards-wrapper {
+    gap: var(--space-8);
+  }
+  .inspiration-card {
+    min-width: 80vw;
+    max-width: 90vw;
+  }
+  .inspirations-title {
+    font-size: var(--font-size-xl);
+  }
+}
 :root {
   /* Primitive Color Tokens */
   --color-white: rgba(255, 255, 255, 1);

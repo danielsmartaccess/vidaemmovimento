@@ -22,13 +22,100 @@ class EventsBenchmarkApp {
             console.error('Erro ao carregar dados, usando dados de fallback:', error);
             this.data = this.fallbackData;
         }
-        
         this.setupEventListeners();
         this.handleInitialRoute();
         this.renderEvents();
+        this.renderInspirationsCarousel();
         this.renderTrends();
         this.renderPlanning();
         this.hideLoading();
+    }
+    renderInspirationsCarousel() {
+        // Dados dos eventos-vitrine
+        const inspirations = [
+            {
+                nome: 'Longevidade Expo + Fórum',
+                local: 'São Paulo, Brasil',
+                quickFacts: 'Maior encontro sênior da América Latina; pavilhões temáticos, painéis e shows.',
+                link: 'https://www.longevidade.com.br/',
+                img: 'https://www.longevidade.com.br/wp-content/uploads/2023/10/galeria-2023-1.jpg'
+            },
+            {
+                nome: 'Geronto Fair',
+                local: 'Gramado – RS, Brasil',
+                quickFacts: 'Única feira da Economia Prateada no Sul; negócios, inovação, experiências.',
+                link: 'https://www.gerontofair.com.br/',
+                img: 'https://www.gerontofair.com.br/wp-content/uploads/2024/04/gerontofair-2024.jpg'
+            },
+            {
+                nome: 'Festival da Longevidade',
+                local: 'Florianópolis, Brasil',
+                quickFacts: 'Festival (28-29 ago 2025) em espaço de medicina/tecnologia; design moderno, oficinas criativas.',
+                link: 'https://festivaldalongevidade.com.br/',
+                img: 'https://festivaldalongevidade.com.br/wp-content/uploads/2024/07/festival-floripa.jpg'
+            },
+            {
+                nome: 'MaturiFest',
+                local: 'São Paulo, Brasil',
+                quickFacts: 'Maior festival de trabalho & empreendedorismo 50+, híbrido, palcos e feira de startups.',
+                link: 'https://www.maturifest.com.br/',
+                img: 'https://www.maturifest.com.br/wp-content/uploads/2023/09/maturifest-palco.jpg'
+            },
+            {
+                nome: 'Silver Economy Expo',
+                local: 'Paris, França',
+                quickFacts: 'Referência europeia B2B em longevidade ativa; estandes high-tech, health-tech.',
+                link: 'https://www.silver-economy-expo.com/',
+                img: 'https://www.silver-economy-expo.com/wp-content/uploads/2023/11/silver-expo-paris.jpg'
+            },
+            {
+                nome: 'Ecoenvelhescência – Festival da Longevidade',
+                local: 'Guará – DF, Brasil',
+                quickFacts: 'Festival comunitário, cultura e intergeracionalidade; rodas de conversa, grafite, shows.',
+                link: 'https://www.instagram.com/ecoenvelhescencia/',
+                img: 'https://www.instagram.com/p/C6Ecoenvelhescencia.jpg'
+            }
+        ];
+
+        // Renderizar apenas na home
+        const homeSection = document.getElementById('home');
+        if (!homeSection) return;
+
+        // Evitar duplicação
+        if (document.getElementById('inspirations-carousel')) return;
+
+        const carousel = document.createElement('div');
+        carousel.id = 'inspirations-carousel';
+        carousel.className = 'inspirations-carousel';
+
+        const title = document.createElement('h2');
+        title.className = 'inspirations-title';
+        title.textContent = 'Inspirações 60+';
+        carousel.appendChild(title);
+
+        const cardsWrapper = document.createElement('div');
+        cardsWrapper.className = 'inspirations-cards-wrapper';
+
+        inspirations.forEach(evento => {
+            const card = document.createElement('div');
+            card.className = 'inspiration-card';
+
+            card.innerHTML = `
+                <div class="inspiration-img-wrapper">
+                    <img src="${evento.img}" alt="${evento.nome}" class="inspiration-img" loading="lazy" />
+                </div>
+                <div class="inspiration-info">
+                    <h3 class="inspiration-nome">${evento.nome}</h3>
+                    <div class="inspiration-local">${evento.local}</div>
+                    <div class="inspiration-facts">${evento.quickFacts}</div>
+                    <a href="${evento.link}" target="_blank" rel="noopener noreferrer" class="inspiration-link">Saiba mais</a>
+                </div>
+            `;
+            cardsWrapper.appendChild(card);
+        });
+
+        carousel.appendChild(cardsWrapper);
+        homeSection.insertBefore(carousel, homeSection.firstChild);
     }
 
     async loadData() {
