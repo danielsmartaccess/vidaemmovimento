@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarks de Eventos 60+ | Vida em Movimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    README: Este webapp exibe benchmarks de eventos culturais e educacionais para público 60+
+    Estrutura:
+    - index.html: Estrutura principal com navegação por hash
+    - style.css: Estilos baseados no design system, otimizado para acessibilidade
+    - app.js: Lógica de carregamento JSON, filtros, navegação e renderização dinâmica
+    - benchmark_eventos_seniores.json: Dados dos eventos (Brasil, Internacionais, Tendências)
+    
+    Navegação:
+    #home - Lista de eventos com filtro
+    #tendencias - Tendências 2025-2026
+    #planejamento - Recomendações para evento "Vida em Movimento"
+    -->
+    
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Benchmarks de Eventos 60+</h1>
+            <nav class="nav">
+                <button class="nav__item nav__item--active" data-section="home">
+                    Eventos
+                </button>
+                <button class="nav__item" data-section="tendencias">
+                    Tendências 2025-2026
+                </button>
+                <button class="nav__item" data-section="planejamento">
+                    Vida em Movimento
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <!-- Seção Home/Listagem -->
+            <section id="home" class="section section--active">
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="search-filter" 
+                        class="form-control search-input" 
+                        placeholder="Filtrar por cidade, tema ou nome do evento..."
+                        autocomplete="off"
+                    >
+                </div>
+
+                <div class="events-container">
+                    <div class="events-section">
+                        <button class="collapsible-header collapsible-header--open" data-target="brasil-events">
+                            <h2>Eventos no Brasil</h2>
+                            <span class="collapsible-icon">−</span>
+                        </button>
+                        <div id="brasil-events" class="collapsible-content collapsible-content--open">
+                            <div class="events-grid" id="brasil-grid">
+                                <!-- Cards dos eventos do Brasil serão inseridos aqui -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events-section">
+                        <button class="collapsible-header collapsible-header--open" data-target="international-events">
+                            <h2>Eventos Internacionais</h2>
+                            <span class="collapsible-icon">−</span>
+                        </button>
+                        <div id="international-events" class="collapsible-content collapsible-content--open">
+                            <div class="events-grid" id="international-grid">
+                                <!-- Cards dos eventos internacionais serão inseridos aqui -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Tendências -->
+            <section id="tendencias" class="section">
+                <h2>Tendências para Eventos 60+ (2025-2026)</h2>
+                <div class="trends-container">
+                    <!-- Conteúdo das tendências será inserido aqui -->
+                </div>
+            </section>
+
+            <!-- Seção Planejamento -->
+            <section id="planejamento" class="section">
+                <h2>Evento "Vida em Movimento" - 01/10/2025</h2>
+                <div class="planning-container">
+                    <!-- Recomendações de planejamento serão inseridas aqui -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal para detalhes do evento -->
+    <div id="event-modal" class="modal hidden">
+        <div class="modal__backdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title" id="modal-title"></h3>
+                <button class="modal__close" aria-label="Fechar">×</button>
+            </div>
+            <div class="modal__body" id="modal-content">
+                <!-- Conteúdo detalhado do evento será inserido aqui -->
+            </div>
+        </div>
+    </div>
+
+    <div class="loading" id="loading">
+        <div class="loading__spinner"></div>
+        <p>Carregando eventos...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

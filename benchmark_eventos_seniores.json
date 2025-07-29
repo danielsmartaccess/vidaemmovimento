@@ -1,0 +1,179 @@
+{
+  "eventos_brasil": {
+    "Fórum São Paulo da Longevidade": {
+      "local": "São Paulo, SP, Brasil",
+      "tipo_espaco": "Centro de Convenções do Expo Center Norte",
+      "capacidade": "Mais de 1.000 congressistas esperados",
+      "formato": "Painéis, palestras, congressos simultâneos, exposições, atividades culturais",
+      "duracao": "3 dias (27 a 29 de outubro)",
+      "temas": "Longevidade ativa, economia prateada, empregabilidade 50+, senior living, saúde suplementar, cuidados",
+      "atividades": "250+ palestrantes, 100+ painéis, Flash Mob, oficinas, shows, atividades sensoriais",
+      "organizadores": "Longevidade Expo+Fórum, Cidade de São Paulo",
+      "parceiros": "Portal do Envelhecimento, Itaú Viver Mais, ANS, mais de 20 parceiros de conteúdo",
+      "networking": "Lounges especializados, área de exposição com 200+ empresas",
+      "impacto": "Consolidado como principal evento de longevidade do Brasil, 6 edições anteriores com 800 palestras",
+      "links": "https://longevidade.com.br"
+    },
+    "CONACARE": {
+      "local": "São Paulo, SP, Brasil",
+      "tipo_espaco": "Centro de convenções (dentro do Fórum de Longevidade)",
+      "capacidade": "Parte do evento maior com milhares de participantes",
+      "formato": "Palestras, painéis, workshops especializados",
+      "duracao": "1 dia (durante o Fórum de Longevidade)",
+      "temas": "Cuidadores formais e familiares, tecnologias de cuidado, regulamentação profissional",
+      "atividades": "Abertura oficial, painéis temáticos, Hub de inovações",
+      "organizadores": "MasterCare Brasil, Hub Longevidade",
+      "parceiros": "Longevidade Expo+Fórum",
+      "networking": "Integrado ao networking do Fórum maior",
+      "impacto": "Principal evento do país sobre cuidadores, criado em 2022",
+      "links": "https://www.conacare.com.br"
+    },
+    "Congresso GERO USP": {
+      "local": "São Paulo, SP, Brasil",
+      "tipo_espaco": "Centro de Convenções Rebouças",
+      "capacidade": "Estimativa de centenas de profissionais da saúde",
+      "formato": "Híbrido (presencial e online), palestras magnas, mesas temáticas",
+      "duracao": "3 dias (25 a 27 de setembro)",
+      "temas": "Movimento e longevidade, geriatria, gerontologia, oncogeriatria",
+      "atividades": "Mesas científicas, palestras magnas, satélites, discussões",
+      "organizadores": "Instituto Central HCFMUSP, Medicine Eventos",
+      "parceiros": "Universidade de São Paulo",
+      "networking": "Encontro interdisciplinar de profissionais da saúde",
+      "impacto": "Evento de referência em geriatria e gerontologia",
+      "links": "https://congressogerousp.com.br"
+    },
+    "Virada da Maturidade": {
+      "local": "São Paulo e múltiplas cidades, SP, Brasil",
+      "tipo_espaco": "Múltiplos espaços (museus, parques, centros culturais)",
+      "capacidade": "17.000 participantes esperados (2017), 13.000 em 2016",
+      "formato": "Festival com atividades distribuídas, oficinas, apresentações",
+      "duracao": "5 dias (27 de setembro a 1 de outubro)",
+      "temas": "Protagonismo sênior, cultura, arte, saúde, bem-estar",
+      "atividades": "185+ atividades, arte, dança, música, oficinas, avaliações de saúde",
+      "organizadores": "Equipe Virada da Maturidade",
+      "parceiros": "55+ parceiros, parcerias público-privadas, 40+ locais",
+      "networking": "Integração intergeracional, 80+ voluntários",
+      "impacto": "Primeiro e maior festival do Brasil dedicado ao protagonismo sênior",
+      "links": "https://viradadamaturidade.com.br"
+    },
+    "CBGG - Congresso Brasileiro de Geriatria e Gerontologia": {
+      "local": "Belo Horizonte, MG, Brasil",
+      "tipo_espaco": "Minas Centro",
+      "capacidade": "2º maior congresso de geriatria do mundo",
+      "formato": "Palestras, painéis, workshops, apresentações científicas",
+      "duracao": "3 dias (3 a 5 de abril 2025)",
+      "temas": "Envelhecimento e tecnologia, parceria entre gerações",
+      "atividades": "Congressistas, mesa de abertura, prêmios, concurso de redação",
+      "organizadores": "Sociedade Brasileira de Geriatria e Gerontologia (SBGG)",
+      "parceiros": "SBGG, profissionais da área",
+      "networking": "Profissionais de geriatria e gerontologia de todo Brasil",
+      "impacto": "Principal evento científico da área no Brasil",
+      "links": "https://www.cbgg2025.com.br"
+    }
+  },
+  "eventos_internacionais": {
+    "IFA Global Conference on Ageing": {
+      "local": "Cape Town, África do Sul",
+      "tipo_espaco": "Centro de convenções",
+      "capacidade": "Centenas de participantes internacionais",
+      "formato": "Conferências, painéis, workshops, apresentações",
+      "duracao": "4 dias (9-12 setembro 2025)",
+      "temas": "Ação sobre envelhecimento, evidências, políticas, práticas",
+      "atividades": "Palestras de especialistas, discussões multidisciplinares",
+      "organizadores": "International Federation on Ageing (IFA)",
+      "parceiros": "WHO, organizações internacionais",
+      "networking": "Rede global de profissionais do envelhecimento",
+      "impacto": "17ª edição da principal conferência mundial sobre envelhecimento",
+      "links": "https://www.ifaconf.ngo"
+    },
+    "Global Wellness Summit": {
+      "local": "Dubai, Emirados Árabes Unidos",
+      "tipo_espaco": "Mandarin Oriental Downtown Dubai",
+      "capacidade": "Líderes do setor wellness mundial",
+      "formato": "Summit de 4 dias, keynotes, discussões, networking",
+      "duracao": "4 dias (18-21 novembro 2025)",
+      "temas": "Longevidade através da lente do wellness",
+      "atividades": "Keynotes, pesquisas, colaborações, branding",
+      "organizadores": "Global Wellness Summit",
+      "parceiros": "Indústria mundial do wellness",
+      "networking": "Tomadores de decisão, executivos, visionários",
+      "impacto": "19ª edição anual, maior encontro da economia do wellness",
+      "links": "https://www.globalwellnesssummit.com"
+    },
+    "World Congress on Active Aging": {
+      "local": "Auckland, Nova Zelândia",
+      "tipo_espaco": "Venue de conferência",
+      "capacidade": "Especialistas globais",
+      "formato": "Congresso satélite, painéis, atividades de networking",
+      "duracao": "1 dia (10 junho 2025)",
+      "temas": "Envelhecimento ativo, conhecimento indígena, inovação inclusiva",
+      "atividades": "Painéis, debates, atividades focadas em pesquisadores iniciantes",
+      "organizadores": "ISBNPA - International Society for Behavioral Nutrition and Physical Activity",
+      "parceiros": "Universidades e centros de pesquisa",
+      "networking": "Acadêmicos e pesquisadores especializados",
+      "impacto": "Evento satélite de conferência internacional de nutrição comportamental",
+      "links": "https://isbnpa.org"
+    },
+    "IAGG World Congress": {
+      "local": "Amsterdam, Holanda",
+      "tipo_espaco": "Centro de convenções",
+      "capacidade": "Milhares de participantes internacionais",
+      "formato": "Congresso mundial, apresentações multidisciplinares",
+      "duracao": "4 dias (5-8 julho 2026)",
+      "temas": "Gerontologia e geriatria, mudanças globais, qualidade de vida",
+      "atividades": "Apresentações científicas, networking, workshops",
+      "organizadores": "International Association of Gerontology and Geriatrics",
+      "parceiros": "Sociedades nacionais de gerontologia",
+      "networking": "Comunidade global de pesquisadores e profissionais",
+      "impacto": "23ª edição do principal congresso mundial de gerontologia",
+      "links": "https://www.iagg2026.org"
+    }
+  },
+  "tendencias_2025_2026": {
+    "tecnologias_assistivas": [
+      "Dispositivos de monitoramento de saúde (relógios inteligentes, pulseiras)",
+      "Alarmes de queda automatizados",
+      "Assistentes de voz inteligentes",
+      "Sensores de movimento e iluminação automática",
+      "Telemedicina e consultas virtuais",
+      "Aplicativos de saúde e bem-estar personalizados"
+    ],
+    "gamificacao": [
+      "Jogos digitais para estimulação cognitiva",
+      "Quebra-cabeças interativos adaptáveis",
+      "Jogos de memória e lógica personalizados",
+      "Realidade virtual para experiências imersivas",
+      "Neuróbicas - exercícios cerebrais não convencionais",
+      "Jogos com Kinect para movimento físico"
+    ],
+    "experiencias_sensoriais": [
+      "Óculos 3D para meditação e caminhadas virtuais",
+      "Ambientes virtuais (praias, parques) para relaxamento",
+      "Projeções 360º para experiências imersivas",
+      "Realidade aumentada (AR) para interação",
+      "Atividades multissensoriais integradas",
+      "Pet terapia e interação com animais"
+    ],
+    "formatos_inovadores": [
+      "Eventos híbridos (presencial + online)",
+      "Micro-eventos mais íntimos para networking",
+      "Festivais que integram entretenimento e educação",
+      "Formatos 24h para diferentes fusos horários",
+      "Espaços de descompressão e meditação",
+      "Flash mobs e atividades participativas"
+    ],
+    "inclusao_acessibilidade": [
+      "Comunicação acessível e traduções",
+      "Adaptações para diferentes necessidades sensoriais",
+      "Personalização como palavra-chave",
+      "Tecnologias de apoio à mobilidade",
+      "Interfaces simplificadas e intuitivas",
+      "Suporte para diferentes níveis de letramento digital"
+    ]
+  },
+  "metadata": {
+    "total_eventos_catalogados": 9,
+    "data_coleta": "2025-07-28",
+    "criterios_selecao": "Eventos com 300-600+ participantes, foco em 60+, culturais/educacionais"
+  }
+}
