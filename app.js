@@ -45,7 +45,7 @@ class EventsBenchmarkApp {
                 local: 'Gramado – RS, Brasil',
                 quickFacts: 'Única feira da Economia Prateada no Sul; negócios, inovação, experiências.',
                 link: 'https://www.gerontofair.com.br/',
-                img: 'https://www.gerontofair.com.br/wp-content/uploads/2024/04/gerontofair-2024.jpg'
+                img: 'https://sortimentos.com.br/wp-content/uploads/2025/06/Geronto-Fair-2025-em-Gramado-Sortimentos-Feiras-e-Eventos-04.jpg'
             },
             {
                 nome: 'Festival da Longevidade',
