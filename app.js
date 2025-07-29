@@ -529,20 +529,19 @@ class EventsBenchmarkApp {
             <div class="planning-section">
                 <h3>🎯 Visão Geral do Evento</h3>
                 <p><strong>Data:</strong> 01 de outubro de 2025</p>
-                <p><strong>Local:</strong> Teatro (400 lugares)</p>
+                <p><strong>Local:</strong> Teatro SESC (350 lugares)</p>
                 <p><strong>Público-alvo:</strong> Adultos 60+ interessados em cultura, educação e bem-estar</p>
-                <p><strong>Duração:</strong> 3 horas (14h30 às 17h30)</p>
+                <p><strong>Duração:</strong> 4 horas (13h30 às 17h30)</p>
             </div>
 
             <div class="planning-section">
                 <h3>📋 Formato Recomendado</h3>
                 <p>Com base nos benchmarks analisados e no tempo disponível de 3 horas, sugerimos:</p>
                 <ul>
-                    <li><strong>Palestra de abertura</strong> com palestrante renomado</li>
-                    <li><strong>Oficina prática principal</strong> em grupos menores</li>
-                    <li><strong>Intervalo para networking</strong> com café</li>
-                    <li><strong>Roda de conversa temática</strong> para compartilhamento</li>
-                    <li><strong>Painel de encerramento</strong> com apresentação cultural</li>
+                    <li><strong>Palestra de abertura</strong> com apresentação </li>
+                    <li><strong>Palestra de destaque</strong> com apresentação </li>
+                    <li><strong>Intervalo para networking</strong> com café/break</li>
+                    <li><strong>Painel de encerramento</strong> com apresentação </li>
                     <li><strong>Networking final</strong> e premiação</li>
                 </ul>
             </div>
