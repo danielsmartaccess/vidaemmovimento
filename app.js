@@ -11,128 +11,8 @@ class EventsBenchmarkApp {
     }
 
     getFallbackData() {
-        return {
-            eventos_brasil: {
-                "Festival da Longevidade São Paulo": {
-                    local: { cidade: "São Paulo", pais: "Brasil" },
-                    tipo_espaco: "Centro de Convenções",
-                    capacidade: "500 participantes",
-                    formato: ["Palestras", "Oficinas", "Performances"],
-                    duracao: "2 dias",
-                    temas: ["Bem-estar", "Cultura Digital", "Empreendedorismo Sênior"],
-                    atividades_dinamicas: ["Rodas de conversa", "Oficinas de tecnologia", "Apresentações culturais"],
-                    organizadores: ["Fundação Longevidade", "Prefeitura de São Paulo"],
-                    fornecedores: {
-                        "Tecnologia": "Grupo Tech+",
-                        "Som": "Audio Pro",
-                        "Mobiliário": "Eventos & Cia"
-                    },
-                    networking_integracao: ["Speed networking", "Mentoria reversa", "Café colaborativo"],
-                    impacto_feedback: "95% dos participantes avaliaram como excelente, com destaque para as atividades práticas",
-                    links: ["https://festivallongevidade.com.br"]
-                },
-                "Congresso Idade Ativa Rio": {
-                    local: { cidade: "Rio de Janeiro", pais: "Brasil" },
-                    tipo_espaco: "Teatro Municipal",
-                    capacidade: "400 participantes",
-                    formato: ["Painéis", "Workshops", "Exposições"],
-                    duracao: "3 dias",
-                    temas: ["Saúde Mental", "Atividade Física", "Arte Terapia"],
-                    atividades_dinamicas: ["Práticas corporais", "Oficinas de arte", "Debates participativos"],
-                    organizadores: ["Instituto Idade Ativa", "Secretaria Municipal de Saúde"],
-                    fornecedores: {
-                        "Audiovisual": "RJ Eventos",
-                        "Catering": "Sabor & Saúde"
-                    },
-                    networking_integracao: ["Grupos temáticos", "Encontros regionais"],
-                    impacto_feedback: "Participantes relataram maior motivação para atividades sociais",
-                    links: ["https://idadeativa.rio.gov.br"]
-                },
-                "Virada da Maturidade": {
-                    local: { cidade: "São Paulo", pais: "Brasil" },
-                    tipo_espaco: "Parque Urbano",
-                    capacidade: "300 participantes",
-                    formato: ["Atividades ao ar livre", "Oficinas", "Shows"],
-                    duracao: "1 dia",
-                    temas: ["Bem-estar", "Cultura", "Socialização"],
-                    atividades_dinamicas: ["Caminhadas guiadas", "Tai chi", "Música ao vivo"],
-                    organizadores: ["Secretaria do Idoso", "Fundação Parques"],
-                    fornecedores: {
-                        "Som": "Audio Parque",
-                        "Estrutura": "Montagens SP"
-                    },
-                    networking_integracao: ["Piqueniques compartilhados", "Grupos de interesse"],
-                    impacto_feedback: "Evento com alta adesão, criou grupos permanentes de atividades",
-                    links: ["https://viradamaturidade.sp.gov.br"]
-                }
-            },
-            eventos_internacionais: {
-                "Age-Friendly Barcelona": {
-                    local: { cidade: "Barcelona", pais: "Espanha" },
-                    tipo_espaco: "Universidade",
-                    capacidade: "600 participantes",
-                    formato: ["Conferências", "Laboratórios de inovação"],
-                    duracao: "4 dias",
-                    temas: ["Cidades inteligentes", "Inclusão digital", "Mobilidade urbana"],
-                    atividades_dinamicas: ["Hackathons sênior", "Simulações urbanas", "Oficinas de apps"],
-                    organizadores: ["Universitat de Barcelona", "WHO Age-Friendly Cities"],
-                    fornecedores: {
-                        "Tecnologia": "Barcelona Tech Hub",
-                        "Tradução": "MultiLang Services"
-                    },
-                    networking_integracao: ["Intercâmbio internacional", "Projeto colaborativo"],
-                    impacto_feedback: "Criação de 12 projetos piloto para cidades age-friendly",
-                    links: ["https://agefriendly.barcelona"]
-                },
-                "Silver Economy Forum Tokyo": {
-                    local: { cidade: "Tóquio", pais: "Japão" },
-                    tipo_espaco: "Centro de Convenções",
-                    capacidade: "800 participantes",
-                    formato: ["Palestras magistrais", "Demonstrações tecnológicas"],
-                    duracao: "2 dias",
-                    temas: ["Robótica assistiva", "Longevidade", "Economia prateada"],
-                    atividades_dinamicas: ["Testes de tecnologia", "Simulações VR", "Apresentações culturais"],
-                    organizadores: ["Japan Aging Society Institute", "Ministry of Health"],
-                    fornecedores: {
-                        "Robótica": "SoftBank Robotics",
-                        "VR": "Sony Interactive"
-                    },
-                    networking_integracao: ["Parcerias empresariais", "Delegações internacionais"],
-                    impacto_feedback: "Lançamento de 5 produtos assistivos no mercado",
-                    links: ["https://silvereconomy.jp"]
-                }
-            },
-            tendencias_2025_2026: {
-                "tecnologias_assistivas": [
-                    "Realidade aumentada para navegação em eventos",
-                    "Tradução simultânea com IA",
-                    "Wearables para monitoramento de saúde",
-                    "Interfaces de voz intuitivas",
-                    "Aplicativos com design inclusivo"
-                ],
-                "gamificacao": [
-                    "Sistemas de pontuação por participação",
-                    "Caça ao tesouro digital",
-                    "Quizzes interativos com prêmios",
-                    "Desafios colaborativos",
-                    "Badges de conquistas pessoais"
-                ],
-                "experiencias_sensoriais": [
-                    "Jardins sensoriais móveis",
-                    "Degustações temáticas",
-                    "Música ao vivo integrada",
-                    "Aromaterapia ambiental",
-                    "Experiências táteis interativas"
-                ],
-                "formatos_inovadores": [
-                    "Eventos híbridos presencial/virtual",
-                    "Micro-aprendizados de 15 minutos",
-                    "Storytelling imersivo",
-                    "Laboratórios vivos",
-                    "Caminhadas pedagógicas"
-                ]
-            }
-        };
+        // Fallback mínimo: vazio, pois agora sempre tentaremos carregar o JSON local
+        return {};
     }
 
     async init() {
@@ -153,14 +33,14 @@ class EventsBenchmarkApp {
 
     async loadData() {
         try {
-            const response = await fetch('https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/f99edbf2dafc741c42c3b177767fecac/c845c526-263c-4b15-ab7c-7bfc6c135fe1/096571c4.json');
+            const response = await fetch('benchmark_eventos_seniores.json');
             if (!response.ok) {
-                throw new Error('Falha ao carregar dados remotos');
+                throw new Error('Falha ao carregar benchmark_eventos_seniores.json');
             }
             const data = await response.json();
             this.data = data;
         } catch (error) {
-            console.warn('Falha no carregamento remoto, usando dados locais:', error);
+            console.warn('Falha ao carregar benchmark_eventos_seniores.json:', error);
             throw error;
         }
     }
@@ -281,9 +161,11 @@ class EventsBenchmarkApp {
         card.setAttribute('role', 'button');
         card.setAttribute('aria-label', `Ver detalhes do evento ${eventName}`);
 
+        // Suporte para diferentes formatos de local
         const location = this.formatLocation(eventData.local);
         const capacity = eventData.capacidade || 'Não informado';
         const venue = eventData.tipo_espaco || 'Não informado';
+        const dataEvento = eventData.duracao || '';
 
         card.innerHTML = `
             <h3 class="event-card__title">${eventName}</h3>
@@ -298,6 +180,9 @@ class EventsBenchmarkApp {
                 <div class="event-card__detail">
                     <strong>Capacidade:</strong> ${capacity}
                 </div>
+                <div class="event-card__detail">
+                    <strong>Data/Duração:</strong> ${dataEvento}
+                </div>
             </div>
         `;
 
@@ -307,7 +192,6 @@ class EventsBenchmarkApp {
 
         // Event listeners para modal
         const showModal = () => this.showEventModal(eventName, eventData);
-        
         card.addEventListener('click', showModal);
         card.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
@@ -346,6 +230,7 @@ class EventsBenchmarkApp {
     }
 
     generateEventDetails(eventData) {
+        // Adaptação para eventos do JSON real
         const details = [
             { label: 'Local', content: this.formatLocation(eventData.local) },
             { label: 'Tipo de Espaço', content: eventData.tipo_espaco || 'Não informado' },
@@ -353,11 +238,11 @@ class EventsBenchmarkApp {
             { label: 'Formato', content: this.formatList(eventData.formato) },
             { label: 'Duração', content: eventData.duracao || 'Não informado' },
             { label: 'Temas Abordados', content: this.formatList(eventData.temas) },
-            { label: 'Atividades e Dinâmicas', content: this.formatList(eventData.atividades_dinamicas) },
+            { label: 'Atividades', content: this.formatList(eventData.atividades || eventData.atividades_dinamicas) },
             { label: 'Organizadores', content: this.formatList(eventData.organizadores) },
-            { label: 'Principais Fornecedores', content: this.formatObject(eventData.fornecedores) },
-            { label: 'Ações de Networking', content: this.formatList(eventData.networking_integracao) },
-            { label: 'Impacto e Feedback', content: eventData.impacto_feedback || 'Não informado' }
+            { label: 'Parceiros', content: this.formatList(eventData.parceiros) },
+            { label: 'Networking', content: eventData.networking || this.formatList(eventData.networking_integracao) },
+            { label: 'Impacto', content: eventData.impacto || eventData.impacto_feedback || 'Não informado' }
         ];
 
         let html = '';
@@ -373,12 +258,14 @@ class EventsBenchmarkApp {
         });
 
         // Links
-        if (eventData.links && eventData.links.length > 0) {
+        if (eventData.links) {
+            // Suporte para string ou array
+            const linksArr = Array.isArray(eventData.links) ? eventData.links : [eventData.links];
             html += `
                 <div class="event-detail">
                     <span class="event-detail__label">Links e Recursos</span>
                     <div class="event-detail__links">
-                        ${eventData.links.map(link => 
+                        ${linksArr.map(link => 
                             `<a href="${link}" target="_blank" rel="noopener noreferrer" class="event-detail__link">
                                 Ver mais 🔗
                             </a>`
