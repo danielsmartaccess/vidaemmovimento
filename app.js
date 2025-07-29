@@ -136,10 +136,8 @@ class EventsBenchmarkApp {
     }
 
     renderEvents() {
-        if (!this.data) return;
-
-        this.renderEventGrid('brasil-grid', this.data.eventos_brasil);
-        this.renderEventGrid('international-grid', this.data.eventos_internacionais);
+        // Não renderiza mais eventos na home, conforme solicitado.
+        // Função mantida para compatibilidade, mas sem efeito.
     }
 
     renderEventGrid(gridId, events) {
